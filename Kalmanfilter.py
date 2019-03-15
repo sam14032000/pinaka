@@ -1,6 +1,7 @@
 import numpy as np 
 import math 
-
+import scipy.integrate as integrate
+from scipy.misc import derivative
 #take these as raw_input from GPS module.Initiating it to zero.How does gps input it as a tuple?(Then accordingly we have to modify it)
 Vb=0#airspeed Bias
 Wn=0#Northern wind component 
@@ -18,6 +19,7 @@ n=0
 rinput=0
 #loop starts here(it is not clear on how to start the loop)
 while rinput!=1:
+    
     print("Reached here")
 
 
